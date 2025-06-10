@@ -145,4 +145,10 @@ background-color: green;
   margin: 0;
   display: block;
 }
+.poster_c img{
+  width: auto;
+  height: 420px;
+  border-radius: 10px 10px 0 0;
+
+}
 
