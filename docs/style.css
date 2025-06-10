@@ -70,10 +70,11 @@ input:hover {
 
 }
 .poster {
-  width: 300px;
+  
+  height: 500px;
   position: relative;
   text-align: center;
-  background-color: white;
+  background-color: #e8e5ef;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(183, 82, 5, 0.1);
   transition: 0.3s ease;
