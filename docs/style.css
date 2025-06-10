@@ -153,4 +153,16 @@ background-color: green;
   border-radius: 10px 10px 0 0;
 
 }
+@media (max-width: 768px) {
+  .icon-oscar, .icon-play, .item:nth-child(2), .item:nth-child(3) {
+    display: none;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+  .header .container {
+    justify-content: center;
+  }
+}
 
