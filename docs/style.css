@@ -82,24 +82,26 @@ input:hover {
   }
 .ticket {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 30px;
+  right: 20px;
   background-color: #FF5501;
   color: rgb(239, 233, 233);
   padding: 8px 12px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold  ;
   border-radius: 5px;
+  text-decoration: none;
+  
 }
 .rating {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 5px 8px;
-  font-size: 14px;
+  top: 5px;
+  left: 20px;
+  padding: 10px 10px;
+  font-size: 20px;
   color: white;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .rating1 {
   background-color: green;
