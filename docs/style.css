@@ -14,7 +14,6 @@ body {
   justify-content: center;
   background-repeat: no-repeat;
   flex-direction: column;
-  
 }
 .container {
   display: flex;
@@ -69,29 +68,37 @@ input:hover {
   justify-content: center;
   padding: 20px;
 }
-.poster{
+.poster {
   position: relative;
   text-align: center;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(183, 82, 5, 0.1);
-  }
-  .poster_c {
+  transition: transform 0.3s ease;
+}
+.poster_c {
   position: relative;
   overflow: hidden;
-  }
+}
+.poster:hover {
+  transform: 0.4s;
+  cursor: pointer;
+  scale: 1.05;
+}
 .ticket {
   position: absolute;
   bottom: 30px;
   right: 20px;
-  background-color: #FF5501;
+  background-color: #ff5501;
   color: rgb(239, 233, 233);
   padding: 8px 12px;
   font-size: 20px;
-  font-weight: bold  ;
+  font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
-  
+}
+.ticket:hover {
+  background-color: #dc2509;
 }
 .rating {
   position: absolute;
