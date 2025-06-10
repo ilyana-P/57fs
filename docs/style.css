@@ -1,97 +1,109 @@
-* {
-  padding: 0;
+body {
   margin: 0;
-  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
 }
-
-body {
-  background-color: #efefef;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-@font-face {
-  font-family: Roboto;
-  src: url("fonts/Roboto-Regular.ttf");
-}
-body {
-  font-family: Roboto;
-}
-main {
-  width: 70%;
-  padding: 50px;
-  margin: auto;
-  background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-}
-
-.photo {
-  width: 45%; /* по две в строке с отступами */
-  aspect-ratio: 16 / 9;
-  margin: 3%;
-  transition: all 0.9s ease;
-  margin: 20px;
-  background-color: orange;
-  background-position: center;
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 130px;
+  background-image: url(imagebanner.jpeg);
   background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
   background-repeat: no-repeat;
-  border-radius: 15px;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-  /* box-shadow: [сдвиг по X] [сдвиг по Y] [размытие] [растяжение] [цвет]; */
+  flex-direction: column;
+  
 }
-.photo:hover {
-  transform: scale(1.5) rotate(6deg);
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  gap: 50px;
 }
-
-h1 {
-  width: 100%;
+.logo {
+  height: 60px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  color: #b0a9a6;
+  gap: 5px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+input[type="text"] {
+  cursor: pointer;
+  height: 35px;
+  opacity: 0.5;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+}
+.icon-play,
+.icon-oscar {
+  opacity: 0.5;
+}
+input:hover {
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s;
+  opacity: 1;
+}
+.logo:hover,
+.item:hover {
+  cursor: pointer;
+  opacity: 1;
+  font-size: 21px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+.poster{
+  position: relative;
   text-align: center;
-  font-size: 48px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(183, 82, 5, 0.1);
+  }
+  .poster_c {
+  position: relative;
+  overflow: hidden;
+  }
+.ticket {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #FF5501;
+  color: rgb(239, 233, 233);
+  padding: 8px 12px;
+  font-size: 17px;
+  font-weight: bold  ;
+  border-radius: 5px;
 }
-div.photo1 {
-  order: 1;
+.rating {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 8px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
 }
-.photo1 {
-  background-image: url("img/img1.jpeg");
+.rating1 {
+  background-color: green;
 }
-.photo2 {
-  background-image: url("img/img2.jpeg");
-}
-.photo3 {
-  background-image: url("img/img3.jpeg");
-}
-.photo4 {
-  background-image: url("img/img4.jpeg");
-}
-.photo5 {
-  background-image: url("img/img5.jpeg");
-}
-.photo6 {
-  background-image: url("img/img6.jpeg");
-}
-.photo7 {
-  background-image: url("img/img7.jpeg");
-}
-.photo8 {
-  background-image: url("img/img8.jpeg");
-}
-.photo9 {
-  background-image: url("img/img9.jpeg");
-}
-.photo10 {
-  background-image: url("img/img11.jpg");
-}
-.photo11 {
-  background-image: url("img/img11.jpg");
-}
-.photo12 {
-  background-image: url("img/img12.jpeg");
-}
-
-.block {
-  width: 250px;
-  height: 250px;
-  border: 2px solid black;
-  margin: 20px;
+.rating2 {
+  background-color: red;
 }

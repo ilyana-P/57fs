@@ -2,26 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="Tilt_Warp/static/TiltWarp-Regular.ttf"
+      as="font"
+    />
+    <title>Movie</title>
   </head>
   <body>
-    <main>
-      <h1>Gallery</h1>
-      <div class="photo photo1">Lorem ipsum dolor sit amet.</div>
-      <div class="photo photo2"></div>
-      <div class="photo photo3"></div>
-      <div class="photo photo4"></div>
-      <div class="photo photo5"></div>
-      <div class="photo photo6"></div>
-      <div class="photo photo7"></div>
-      <div class="photo photo8"></div>
-      <div class="photo photo9"></div>
-      <div class="photo photo10"></div>
-      <div class="photo photo11"></div>
-      <div class="photo photo12"></div>
-      <img src="" alt="">
+    <header class="header">
+      <div class="container">
+        <img src="logo.png" alt="logo-kinopoisk" class="logo" />
+        <div class="item">
+          <img src="play.svg" alt="imageplay" class="icon-play" />
+          <span>Онлайн-кинотеатр</span>
+        </div>
+        <div class="item">
+          <img src="oscar.svg" alt="imageoscar" class="icon-oscar" />
+          <span>Оскар-2023</span>
+        </div>
+        <input placeholder="Фильмы, сериалы, пер" type="text" />
+      </div>
+    </header>
+    <main class="gallery">
+      <div class="poster">
+        <div class="poster_c">
+          <img src="movie1.webp" alt="Бешенство" />
+          <p class="rating rating1">9,8</p>
+          <a href="#" class="ticket">Билеты</a>
+        </div>
+        <h2>"Бешенство"</h2>
+      </div>
+      <div class="poster">
+        <div class="poster_c">
+          <img src="movie2.webp" alt="Нюрнберг" />
+          <p class="rating rating2">4,6</p>
+          <a href="#" class="ticket">Билеты</a>
+        </div>
+        <h2>"Нюрнберг"</h2>
+      </div>
     </main>
   </body>
 </html>
