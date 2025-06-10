@@ -64,24 +64,25 @@ input:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  padding: 20px;
+  gap: 40px;
+  justify-content:space-evenly;
+  padding: 60px;
+
 }
 .poster {
+  width: 300px;
   position: relative;
   text-align: center;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(183, 82, 5, 0.1);
-  transition: transform 0.3s ease;
+  transition: 0.3s ease;
 }
 .poster_c {
   position: relative;
   overflow: hidden;
 }
 .poster:hover {
-  transform: 0.4s;
   cursor: pointer;
   scale: 1.05;
 }
@@ -92,7 +93,7 @@ input:hover {
   background-color: #ff5501;
   color: rgb(239, 233, 233);
   padding: 8px 12px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
@@ -116,10 +117,13 @@ input:hover {
 .rating2 {
   background-color: red;
 }
+.rating3 {
+background-color: green;
+}
 .descr {
   display: none;
   position: absolute;
-  bottom: 170px;
+  bottom: 10px;
   left: 10px;
   right: 10px;
   background-color: rgba(246, 237, 237, 0.9);
@@ -132,8 +136,13 @@ input:hover {
 
 .poster_c:hover .descr {
   display: block;
-  transition: 0.5s;
+  transition: .5s;
 }
-h2 {
-  opacity: 0.5;
+.poster img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  margin: 0;
+  display: block;
 }
+
