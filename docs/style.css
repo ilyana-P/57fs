@@ -97,6 +97,21 @@ footer {
 }
 .character-card:hover {
   box-shadow: 0 8px 16px rgba(43, 30, 30, 0.2);
+  
+}
+.icon-info {
+  text-align: center;
+  padding: 10px;
+}
+.icon-info i {
+  font-size: 20px;
+  color: #5f505a;
+
+}
+.sm i {
+  margin-left: 10px;
+  color: rgb(192, 186, 186);
+  font-size: 15px;
 }
 @media (max-width: 768px) {
   .header {
