@@ -1,7 +1,7 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Raleway:ital,wght@0,100;0,400;0,500;1,100;1,400;1,500&display=swap");
 body {
   margin: 0;
   /* делаем sticky footer */
@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   /* vh - viewport height, высота видимой области браузера */
   min-height: 100vh;
+  font-family: "Raleway",sans;
 }
 .header {
   position: sticky;
