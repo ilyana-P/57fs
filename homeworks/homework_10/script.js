@@ -26,12 +26,19 @@ console.log(age_10);
 
 // 1.5 Создайте новый массив, где "Anakin Skywalker" заменен на:
 // `{ name: "Darth Vader", isJedi: false, age: 50 }`
-const newHero = [...starWarsHeroes];
-newHero.splice(0, 1);
+// const newHero = [...starWarsHeroes];
+// newHero.splice(0, 1);
+// console.log(newHero);
+
+// newHero.unshift({ name: "Darth Vader", isJedi: false, age: 50 });
+// console.log(newHero);
+const newHero = starWarsHeroes.map((hero) =>
+  hero.name === "Anakin Skywalker"
+    ? { name: "Darth Vader", isJedi: false, age: 50 }
+    : { ...hero }
+);
 console.log(newHero);
 
-newHero.unshift({ name: "Darth Vader", isJedi: false, age: 50 });
-console.log(newHero);
 // 1.6 Создайте на основе старого массива новый массив объектов по образу:
 // `[{ name: "Luke Skywalker", isJedi: true }, { name: "Han Solo", isJedi: false }, ...]`
 const newMassiv = starWarsHeroes.map((element) => ({
