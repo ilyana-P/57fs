@@ -4,6 +4,7 @@ const btn = document.getElementById("magic-btn");
 const clonedBtn = btn.cloneNode(true);
 // задали id
 clonedBtn.id = "magic-btn-2";
+clonedBtn.className="second-btn"
 
 btn.addEventListener("click", () => {
   // при нажатии на первую кнопку
